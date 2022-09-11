@@ -1,4 +1,5 @@
 import logging
+
 import os
 import numpy as np
 import pandas as pd
@@ -7,8 +8,9 @@ import editdistance
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, KeyboardButton, Update, ReplyKeyboardMarkup, ForceReply
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext, CallbackQueryHandler, \
     ConversationHandler
+    
 
-TOKEN = "5203048737:AAHTSnzjm68wVTEMMfVAFxU0OWYzRloGJg4"
+from config import TOKEN, APP_NAME    
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
